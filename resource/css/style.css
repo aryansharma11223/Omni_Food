@@ -13,6 +13,63 @@ html{
     font-family: 'Lato', 'Arial', sans-serif;
 }
 
+::selection{
+    background-color: azure;
+}
+
+/* Navbar Starts Here */
+
+#navbar{
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 15px 30px;
+}
+
+#navbar .logo{
+    height: 150px;
+    width: 100%;
+}
+
+#navbar .logo img{
+    height: 100%;
+    width: 40%;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#navbar .list{
+    width: 100%;
+}
+
+#navbar .list ul{
+    margin-top: 30px;
+}
+
+#navbar .list ul li{
+    display: inline;
+    margin: 0 50px;
+}
+
+#navbar .list ul li a{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+#navbar .list ul li a:hover{
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+/* Navbar Ends Here */
+
 /* Main Section Starts Here */
 
 #main{
@@ -23,11 +80,11 @@ html{
 
 #main::after{
     content: "";
-    background: url(../images/hero.jpg);
+    background-image: url(../images/hero.jpg);
+    opacity: .8;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
@@ -41,13 +98,13 @@ html{
     height: 100vh;
     width: 50%;
     margin: auto;
-    padding-top: 20%;
+    padding-top: 18%;
 }
 
 #main .content p{
     font-size: 40px;
-    margin-bottom: 20px;
-    color: #000;
+    margin-bottom: 40px;
+    color: #fff;
 }
 
 #main .content a{
