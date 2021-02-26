@@ -14,30 +14,33 @@ html{
 }
 
 ::selection{
-    background-color: azure;
+    background-color: cadetblue;
 }
 
 /* Navbar Starts Here */
 
 #navbar{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     height: 20vh;
     width: 100%;
     position: fixed;
     display: grid;
     grid-template-columns: 70% 30%;
-    padding: 15px 30px;
+    padding: 5px 30px;
 }
 
 #navbar .logo{
-    height: 150px;
-    width: 100%;
+    height: 120px;
+    width: 90%;
 }
 
 #navbar .logo img{
     height: 100%;
     width: 40%;
     float: right;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
@@ -64,8 +67,8 @@ html{
 }
 
 #navbar .list ul li a:hover{
-    border-top: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
 }
 
 /* Navbar Ends Here */
@@ -81,7 +84,7 @@ html{
 #main::after{
     content: "";
     background-image: url(../images/hero.jpg);
-    opacity: .8;
+    opacity: .9;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +107,7 @@ html{
 #main .content p{
     font-size: 40px;
     margin-bottom: 40px;
-    color: #fff;
+    color: #000;
 }
 
 #main .content a{
@@ -135,3 +138,11 @@ html{
 }
 
 /* Main Section Ends Here */
+
+
+
+/* Features Section Starts Here */
+
+
+
+/* Features Section Ends Here */
