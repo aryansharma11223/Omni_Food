@@ -1,203 +1,436 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html{
-    font-family: 'Lato', 'Arial', sans-serif;
-}
-
-section{
-    padding: 80px 0;
-}
-
-h1, h2, h3{
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-h1{
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #000;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-    font-size: 240%;
-}
-
-h2{
-    font-size: 180%;
-    text-align: center;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
-
-h2:after{
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #000;
-    width: 15%;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-h3{
-    font-size: 110%;
-}
-
-::selection{
-    background-color: cadetblue;
-}
-
-/* Navbar Starts Here */
-
-#navbar{
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
-    height: 20vh;
-    width: 100%;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    padding: 5px 30px;
-}
-
-#navbar .logo{
-    height: 120px;
-    width: 90%;
-}
-
-#navbar .logo img{
-    height: 100%;
-    width: 40%;
-    float: right;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-}
-
-#navbar .list{
-    margin-top: 15px;
-    width: 100%;
-}
-
-#navbar .list ul{
-    margin-top: 30px;
-}
-
-#navbar .list ul li{
-    display: inline;
-    margin: 0 50px;
-}
-
-#navbar .list ul li a{
-    color: #000;
+    font-family: 'lato','Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    color: #4a4a4a;
     font-size: 20px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all .2s ease;
+    font-weight: 300;
+
 }
 
-#navbar .list ul li a:hover{
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-}
-
-/* Navbar Ends Here */
-
-
-
-/* Main Section Starts Here */
-
-#main{
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.424)),url(img/hero.jpg);
     height: 100vh;
-    width: 100%;
-    text-align: center;
-}
-
-#main::after{
-    content: "";
-    background-image: url(../images/hero.jpg);
-    opacity: .9;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    background-attachment: fixed;
+}
+.header-text{
     position: absolute;
-    z-index: -1;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
 
-}
-
-#main .content{
-    height: 100vh;
-    width: 50%;
-    margin: auto;
-    padding-top: 18%;
-}
-
-#main .content p{
-    font-size: 40px;
-    margin-bottom: 40px;
-    color: #000;
-}
-
-#main .content a{
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: all .5s ease;
-}
-
-#main .content .first-btn{
-    background-color: #000;
-    color: #fff;
-}
-
-#main .content .first-btn:hover{
-    background-color: #fff;
-    color: #000;
-}
-
-#main .content .second-btn{
-    background-color: #fff;
-    color: #000;
-}
-
-#main .content .second-btn:hover{
-    background-color: #000;
-    color: #fff;
-}
-
-/* Main Section Ends Here */
-
-
-
-/* Features Section Starts Here */
-
-#features{
-    margin: 0 70px;
-}
-
-#features .feature-text{
-    width: 80%;
-    margin: 10px auto;
-    line-height: 145%;
-}
-
-#features .box{
     
 }
 
-/* Features Section Ends Here */
+h1{
+    margin: 0%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 240%;
+    font-weight: 300;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #c49b12;
+    border-bottom:1px solid ;
+    padding-bottom: 2px;
+}
+a:hover,
+a:active{
+    border-bottom: 1px solid transparent;
+    color: #4a4a4a;
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50px;
+    transition: all .5s ease;
+
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #a88200;
+}
+
+
+
+.btn-full{
+    background-color: lightslategray;
+    color: black;
+    border: 2px solid #fff;
+
+}
+.btn-full {
+    padding: 4px 10px;
+}
+
+.btn-border{
+    border: 2px solid #fff;
+    background-color: lightslategray;
+
+}
+
+.btn-full:link,
+.btn-full:visited{
+    color: black;
+    background-color: #c49b12;
+    border: 1px solid #d3d3d3;
+    margin-right: 15px;    
+}
+.btn-full:hover{
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+.btn:active{
+    color: aquamarine;
+}
+
+.btn:visited{
+    color: rgb(182, 182, 216);
+}
+.black-logo {
+   height: 100px;
+   margin-top: 15px;
+   
+}  
+.logo {
+    height: 100px;
+    margin-top: 15px;
+    
+ }  
+ 
+.main-nav{
+   float: right;
+   list-style: none;
+   margin-top: 50px;
+}
+.main-nav li{
+    display: inline-block;
+    /* margin-left: 40px; */
+    margin-right: 40px;
+    
+    
+}
+.main-nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 3px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover{
+    color: aqua;
+    border-top: 3px solid #fff; 
+    border-bottom: 3px solid #fff; 
+    border-radius: 10px;
+ 
+}
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#555;
+    box-shadow: 0 3px 3px #efefef;
+    z-index: 9999;
+}
+.sticky .logo{
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 8px 0;
+    color: #000;
+}
+ .feature-text{
+     width: 70%;
+     margin-left: 15%;
+     line-height: 145%;
+ }
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.section.meal{
+    padding: 0;
+}
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meal-showcase li{
+    width: 25%;
+    float: left;
+}
+.meal-photos{
+    width: 100%;
+    margin: 0%;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photos img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+.meal-photos img:hover
+{
+transform: scale(1.4);
+opacity: 1;
+}
+.phone-image{
+    width:40%;
+
+}
+.step-box:first-child {
+    text-align: right; 
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.step-box:first-child {
+      padding-left: 3%;
+    margin-top: 70px;
+}
+.work-step{
+    margin-bottom: 30px;
+    
+}
+.work-step div{
+    border: 1px solid black;
+    height: 45px;
+    width: 45;
+    border-radius: 50%;
+    color: black;
+    text-align: centre;
+    padding: 5px;
+    font-size: 140;
+    float: left;
+    margin-right: 10px;
+    
+}
+.word-step:last-of-type{
+    margin-bottom: 80px;
+}
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+.btn-app{
+    height: 50px;
+    margin-right: 15px;
+}
+.clearfix {zoom:1},
+.clearfix: after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.section-step
+{
+    background-color: lightgray;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.city_features{
+    margin-bottom: 5px;
+}
+.icon-small{
+    color: #c49b12;
+    font-size: 150%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+blockquote::before{
+    content: "\201C";
+    font-size: 400%;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 15px;
+    margin-left: 6px;
+}
+cite img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50%;
+    vertical-align: middle;
+}
+.section-plans{
+    background: linear-gradient(rgba(4, 104, 143, 0.418),rgba(4, 104, 143, 0.418));
+}
+.plan-box{
+    background-color: #fafafa;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5px;
+    box-shadow: 10px 10px 5px #c9c9c9;
+}
+.boxx{
+    background-color: #4a4a4a;
+}
+
+h3{
+    color: #c49b12;
+}
+.plan-details li{
+    list-style: none;
+}
+
+.plan-month {
+    font-size: 200%;
+    color: #c49b12;
+}
+.plan-month span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-per-meal{
+    font-size: 80%;
+}
+.plan-box div:last-child{
+    text-align: center;
+    padding: 5px;
+}
+.section-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=name],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+}
+.textarea{
+    height: 100px;
+}
+*:focus {
+    outline:none;
+}
+
+footer{
+    background-color: #575757;
+}
+
+.nav-links{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.nav-links li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.nav-links li a:link,
+.nav-links li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: #c6c6c6;
+    border: 0;
+
+}
+
+.nav-links li a:hover,
+.nav-links li a:active{
+    color: #e8e8e8;
+    font-size: 105%;
+}
+
+.ion.social-facebook:hover{
+    color: #4267b2;
+}
+
+.ion.social-googleplus:hover{
+    color: #db4a39;
+}
+
+.ion.social-twitter:hover{
+    color: #1da1f2;
+}
+
+.ion.social-instagram:hover{
+    color: #8a3ab9;
+}
+
+
